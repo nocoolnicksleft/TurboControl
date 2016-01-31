@@ -1,7 +1,7 @@
 
 TurboControls
 
-Collection of small windows control elements resembling 80s style displays and switches.
+Collection of small windows control elements resembling 80s style displays and switches. 
 
 These were built in 2005 using bitmap artwork, so they are far too small to current 
 standards in screen resolution.
