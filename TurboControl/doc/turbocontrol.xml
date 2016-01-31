@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TurboControl</name>
+    </assembly>
+    <members>
+        <member name="T:TurboControl.DigiSwitch">
+            <summary>
+            Visible Control resembling the german DigiTast of the seventies
+            </summary>
+        </member>
+        <member name="F:TurboControl.DigiSwitch.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TurboControl.DigiSwitch.#ctor">
+            <summary>
+            Initializes a red digiswitch without an LED
+            </summary>
+        </member>
+        <member name="M:TurboControl.DigiSwitch.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:TurboControl.DigiSwitch.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:TurboControl.DigiSwitch.StateLED">
+            <summary>
+            State of the LED. If the switch does not have an LED the value is stored anyway.
+            </summary>
+        </member>
+        <member name="P:TurboControl.DigiSwitch.AutoToggle">
+            <summary>
+            When set to true, the digiswitch will toggle the state of the LED each time it is left-clicked.
+            </summary>
+        </member>
+        <member name="P:TurboControl.DigiSwitch.StyleColor">
+            <summary>
+            Color of the switch. It is available in commercial version colors.
+            </summary>
+        </member>
+        <member name="P:TurboControl.DigiSwitch.Style">
+            <summary>
+            Display and color of the integrated LED.
+            </summary>
+        </member>
+        <member name="M:TurboControl.DigiSwitch.SetDimensions">
+            <summary>
+            Set Dimensions of the control from its properties.
+            </summary>
+        </member>
+        <member name="M:TurboControl.DigiSwitch.OpenBitmaps">
+            <summary>
+            Set up the needed bitmaps from the properties of the control.
+            </summary>
+        </member>
+        <member name="T:TurboControl.DigiSwitchColors">
+            <summary>
+            Color options used for digiswitch controls.
+            </summary>
+        </member>
+        <member name="T:TurboControl.DigiSwitchStyles">
+            <summary>
+            LED color options for digiswitch controls.
+            </summary>
+        </member>
+        <member name="T:TurboControl.GlowSwitch">
+            <summary>
+            Summary description for GlowSwitch.
+            </summary>
+            
+        </member>
+        <member name="F:TurboControl.GlowSwitch.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TurboControl.GlowSwitch.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:TurboControl.GlowSwitch.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TurboControl.MatrixDisplay">
+            <summary>
+            Display Control in the style of early five-by-seven matrix displays
+            </summary>
+            
+        </member>
+        <member name="F:TurboControl.MatrixDisplay.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.#ctor">
+            <summary>
+            General constructor
+            </summary>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.InitCharacterTable">
+            <summary>
+            Build 7-bit ASCII character table
+            </summary>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.Scroll(System.Int32)">
+            <summary>
+            Scroll up
+            </summary>
+            <param name="n">Number of lines to scroll</param>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.WriteLine(System.String)">
+            <summary>
+            Write text and scroll up
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.SetText(System.Int32,System.Int32,System.Int32,System.Boolean,System.String)">
+            <summary>
+            Write text to character position
+            </summary>
+            <param name="row"></param>
+            <param name="col"></param>
+            <param name="width"></param>
+            <param name="alignright"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.SetCharacterDimensions">
+            <summary>
+            Set character height according to vertical display mode 
+            </summary>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.SetDimensions">
+            <summary>
+            Set dimensions from character position values
+            </summary>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.ClearBitmapCache">
+            <summary>
+            Clear cached font bitmaps
+            </summary>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.Clear">
+            <summary>
+            Clear character buffer
+            </summary>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.SetCharactersFromValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.GetCharacterRectangle(System.Int32,System.Int32)">
+            <summary>
+            Calculate Rectangle for given character position
+            </summary>
+            <param name="row"></param>
+            <param name="col"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.ReplaceByValidCharacter(System.Int32)">
+            <summary>
+            Return valid character value if out of range
+            </summary>
+            <param name="c"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.SetCharacter(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Set character value
+            </summary>
+            <param name="row">Character row</param>
+            <param name="col">Character column</param>
+            <param name="c">ASCII code value</param>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.MakeCharacterBitmap(System.Int32,System.Drawing.Graphics)">
+            <summary>
+            Construct character bitmap for single character
+            Not really efficient, bitmaps are cached by DrawCharacter
+            </summary>
+            <param name="code"></param>
+            <param name="g"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.DrawCharacter(System.Int32,System.Int32,System.Drawing.Graphics)">
+            <summary>
+            Draw single character
+            Called by onPaint
+            </summary>
+            <param name="cx">Horizontal character position</param>
+            <param name="cy">Vertical character position</param>
+            <param name="g">Active graphics object</param>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.DrawFrame(System.Drawing.Graphics)">
+            <summary>
+            Draw frame lines without background
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Paint entire control
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TurboControl.MatrixDisplay.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Paint background color over entire control area
+            </summary>
+            <param name="peventargs"></param>
+        </member>
+        <member name="T:TurboControl.VerticalStyles">
+            <summary>
+            Vertical display style 
+            </summary>
+        </member>
+        <member name="F:TurboControl.VerticalStyles.Compact">
+            <summary>
+            All font lines are mapped to consecutive display lines
+            </summary>
+        </member>
+        <member name="F:TurboControl.VerticalStyles.Scanlines">
+            <summary>
+            Font lines are divided by empty scan lines of 1 pixel height
+            </summary>
+        </member>
+        <member name="F:TurboControl.VerticalStyles.Filled">
+            <summary>
+            Font lines are doubled
+            </summary>
+        </member>
+        <member name="T:TurboControl.HorizontalStyles">
+            <summary>
+            Horizontal display style
+            </summary>
+        </member>
+        <member name="F:TurboControl.HorizontalStyles.Single">
+            <summary>
+            Every font pixel covers exactly one display pixel
+            </summary>
+        </member>
+        <member name="F:TurboControl.HorizontalStyles.Double">
+            <summary>
+            Every font pixel is stretched to two display pixels
+            </summary>
+        </member>
+        <member name="F:TurboControl.HorizontalStyles.Triple">
+            <summary>
+            Every font pixel is stretched to three display pixels
+            </summary>
+        </member>
+        <member name="T:TurboControl.NoResizeDesigner">
+            <summary>
+            Summary description for NoResizeDesigner.
+            </summary>
+        </member>
+        <member name="T:TurboControl.SegmentDisplay">
+            <summary>
+            Summary description for CustomControl1.
+            </summary>
+            
+        </member>
+        <member name="F:TurboControl.SegmentDisplay.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TurboControl.SegmentDisplay.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TurboControl.Win32">
+            <summary>
+            Summary description for Win32.
+            </summary>
+        </member>
+    </members>
+</doc>

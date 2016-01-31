@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B84650E0-E1DF-4D95-B317-243C923076CA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>TurboControl</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TurboControl</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>doc\turbocontrol.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DigiSwitch.cs" />
+    <Compile Include="GlowSwitch.cs" />
+    <Compile Include="MatrixDisplay.cs" />
+    <Compile Include="NoResizeDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SegmentDisplay.cs" />
+    <Compile Include="Win32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="DigiSwitch.resx">
+      <DependentUpon>DigiSwitch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlowSwitch.resx">
+      <DependentUpon>GlowSwitch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\DigiSwitch\black_closed.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\black_closed_greenled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\black_closed_greenled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\black_closed_redled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\black_closed_redled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\black_open.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\black_open_greenled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\black_open_greenled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\black_open_redled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\black_open_redled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\blue_closed.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\blue_closed_greenled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\blue_closed_greenled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\blue_closed_redled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\blue_closed_redled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\blue_open.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\blue_open_greenled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\blue_open_greenled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\blue_open_redled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\blue_open_redled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\green_closed.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\green_closed_greenled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\green_closed_greenled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\green_closed_redled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\green_closed_redled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\green_open.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\green_open_greenled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\green_open_greenled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\green_open_redled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\green_open_redled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\red_closed.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\red_closed_greenled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\red_closed_greenled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\red_closed_redled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\red_closed_redled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\red_open.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\red_open_greenled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\red_open_greenled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\red_open_redled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\red_open_redled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\yellow_closed.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\yellow_closed_greenled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\yellow_closed_greenled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\yellow_closed_redled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\yellow_closed_redled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\yellow_open.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\yellow_open_greenled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\yellow_open_greenled_on.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\yellow_open_redled_off.bmp" />
+    <EmbeddedResource Include="Images\DigiSwitch\yellow_open_redled_on.bmp" />
+    <EmbeddedResource Include="Images\GlowSwitch\MaskArrowDown.bmp" />
+    <EmbeddedResource Include="Images\GlowSwitch\MaskArrowLeft.bmp" />
+    <EmbeddedResource Include="Images\GlowSwitch\MaskArrowRight.bmp" />
+    <EmbeddedResource Include="Images\GlowSwitch\MaskArrowUp.bmp" />
+    <EmbeddedResource Include="MatrixDisplay.resx">
+      <DependentUpon>MatrixDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SegmentDisplay.resx">
+      <DependentUpon>SegmentDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Designer\TurboControl.DigiSwitch.bmp" />
+    <EmbeddedResource Include="Images\Designer\TurboControl.GlowSwitch.bmp" />
+    <EmbeddedResource Include="Images\Designer\TurboControl.MatrixDisplay.bmp" />
+    <EmbeddedResource Include="Images\Designer\TurboControl.SegmentDisplay.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TurboControl2\TurboControl2.csproj">
+      <Project>{614188D1-28DF-457C-A96E-567EC2232858}</Project>
+      <Name>TurboControl2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
