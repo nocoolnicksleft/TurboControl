@@ -1,5 +1,5 @@
 
-TurboControls
+###TurboControls
 
 Collection of small windows control elements resembling 80s style displays and switches. 
 
@@ -14,11 +14,15 @@ containing a little demo.
 
 Not actively developed, but feel free to drop me a line for requests :)
 
-============================================================================================
+###Screenshot
+
+![alt tag](https://raw.githubusercontent.com/nocoolnicksleft/TurboControl/master/screenshot.png)
+
+###Notes
 
 Will compile with Visual Studio 2015
 
-============================================================================================
+###Copyright
 
 Copyright (c) 2005, 2015 Björn Seip
 nocoolnicksleft@gmail.com
